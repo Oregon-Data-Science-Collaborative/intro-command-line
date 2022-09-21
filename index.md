@@ -14,7 +14,7 @@ humantime: "Two-day workshps will run 2-5 pm each day \n One-day workshop will r
 startdate: 2022-00-00      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-00-00        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Jake Searcy", "Lillian Aoki"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper:     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper:  []   # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["jsearcy@uoregon.edu","laoki@uoregon.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -240,11 +240,13 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
+{% comment %}
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
+{% endcomment %}
 
 {% comment %}
 WHO CAN ATTEND?
@@ -272,6 +274,8 @@ Edit the text to match who can attend the workshop. For instance:
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
+
+{% comment%}
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
@@ -284,7 +288,7 @@ Everyone who participates in Carpentries activities is required to conform to th
   </a>
 </p>
 <hr/>
-
+{% endcomment %}
 
 {% comment %}
 Collaborative Notes
