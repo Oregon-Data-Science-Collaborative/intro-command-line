@@ -407,7 +407,7 @@ please preview your site before committing, and make sure to run
   Data Carpentry
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
-  {% if site.carpentry == "uo" %}
+  {% elseif site.carpentry == "uo" %}
   Oregon Data Science Collaborative
   {% endif %}
   workshop,
