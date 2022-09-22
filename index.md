@@ -359,11 +359,11 @@ of code below the Schedule `<h2>` header below with
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
+{% elsif site.caprentry == "uo" %}
+{% include uo/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
-{% elsif site.caprentry == "uo" %}
-{% include uo/schedule.html %}
 {% endif %}
 
 {% comment %}
