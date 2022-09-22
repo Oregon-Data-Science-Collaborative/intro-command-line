@@ -158,7 +158,7 @@ address.
 DATE
 
 This block displays the date and links to Google Calendar.
-{% endcomment %}
+
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
@@ -166,6 +166,7 @@ This block displays the date and links to Google Calendar.
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 SPECIAL REQUIREMENTS
@@ -194,20 +195,11 @@ special instructions.
   <strong>Accessibility:</strong>
 {% if online == "false" %}
   We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
+  accessible to everybody. The physical space is wheelchair accessible, and accessible restrooms are available. Please
+  notify the instructors in advance of the workshop if you require any accommodations or if there is
+  anything we can do to make this workshop more accessible to you.
 </p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
-</p>
+
 {% else %}
   We are dedicated to providing a positive and accessible learning environment for all. Please
   notify the instructors in advance of the workshop if you require any accommodations or if there is
@@ -370,6 +362,8 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "incubator" %}
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
+{% elsif site.caprentry == "uo" %}
+{% include uo/schedule.html %}
 {% endif %}
 
 {% comment %}
