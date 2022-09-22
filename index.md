@@ -9,8 +9,8 @@ country: "us"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "44.04664881147325"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-123.07436188805694"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Two-day workshop on Oct 11 and 13, 2022 \n One-day workshop on Oct 21, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "Two-day workshps will run 2-5 pm each day \n One-day workshop will run 1-5 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+humandate: "Oct 11, 13 (two-day workshop), Oct 21 (one-day workshop)"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "2-5 pm (two-day workshp). \n 1-5 pm (one-day workshop)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-00-00      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-00-00        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Jake Searcy", "Lillian Aoki"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -158,15 +158,15 @@ address.
 DATE
 
 This block displays the date and links to Google Calendar.
-
+{% endcomment %}
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
-  {{page.humandate}}.
-  {% include workshop_calendar.html %}
+  The 2-day workshop will be held on Oct 11 and Oct 13, 2022, from 2-5 pm each day.\n
+  The 1-day workshop will be held on Oct 21, 2022, from 1-5 pm.
 </p>
 {% endif %}
-{% endcomment %}
+
 
 {% comment %}
 SPECIAL REQUIREMENTS
@@ -359,7 +359,7 @@ of code below the Schedule `<h2>` header below with
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
-{% elsif site.caprentry == "uo" %}
+{% elsif site.carpentry == "uo" %}
 {% include uo/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
