@@ -80,17 +80,14 @@ displayed if the 'eventbrite' field in the header is not set.
 {% comment %}
 iCal
 Add calendar invite file
-
+{% endcomment%}
 
 {% if page.ical %}
 
-<iframe
-  src="{page.ical}"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
+<button type="button" class="btn btn-primary btn-lg" 
+onclick="window.location.href= '{{page.ical}}';">
+Add to calendar
+</button>
 
 {% endif %}
 
