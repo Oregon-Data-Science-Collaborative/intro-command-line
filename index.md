@@ -18,7 +18,7 @@ helper:  []   # boxed, comma-separated list of helpers' names, like ["Marlyn Wes
 email: ["jsearcy@uoregon.edu","laoki@uoregon.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  https://etherpad.wikimedia.org/p/intro-command-line-UO-2022-10 # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
-ical: https://calendar.google.com/event?action=TEMPLATE&tmeid=MDZyczZwOXZ0N2VudTY3NDZpa2Y3Z2d2cTAgbGFva2lAdW9yZWdvbi5lZHU&tmsrc=laoki%40uoregon.edu
+ical: https://calendar.google.com/event?action=TEMPLATE&tmeid=MDZyczZwOXZ0N2VudTY3NDZpa2Y3Z2d2cTAgNDRhNDQyMjQ0MGMwMmE5ZjNjYTNhNjYyZmYzMDVjNmY0MjkwNThjMjZkMzliOGQ3Y2I4ZmQwOTQxMDAzN2UwMUBn&tmsrc=44a4422440c02a9f3ca3a662ff305c6f429058c26d39b8d7cb8fd09410037e01%40group.calendar.google.com
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
